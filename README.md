@@ -1,0 +1,1 @@
+This site is to demonstrate proficiency in various web technology concepts. Only standard HTML, CSS, and JavaScript will be used; no external libraries or frameworks will be used on this page. As such, certain aproaches may be overly simplistic as a superior option may exist when using an external library or framework. 
