@@ -1,0 +1,61 @@
+
+.flip-container {
+	perspective: 1000px;
+	margin: 50px;
+}
+
+.flipper.flipped {
+	transform: rotateY(180deg);
+	transform-origin: 350px center;
+}
+
+.flipper.stowed {
+	margin-left: -378px;
+	z-index: -1;
+}
+
+.flip-container, .front, .back, .blankCard {
+	width: 320px;
+	height: 480px;
+}
+
+.flipper {
+	transition: 1.5s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back, .blankCard {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px;
+	border-style: solid;
+}
+
+.front {
+	z-index: 2;
+	background-color: blue;
+}
+
+#deck {
+	background-color: red;
+	border-style: solid;
+	border: 1px;
+}
+
+
+.back {
+	transform: rotateY(180deg);
+	background-color: yellow;
+}
+
+.blankCard {
+	background-color: green;
+}
+
+.low {
+	z-index: -2;
+	display: none;
+}

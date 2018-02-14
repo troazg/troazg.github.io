@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Card Draw</title>
+    <link rel="stylesheet" type="text/css" href="cardCSS.css">
+  </head>
+  <body>
+		<h2>Card Draw</h2>
+
+		<div class="flip-container" id="deck">
+			<div class="blankCard" id="blankCard" onclick="storeAndFlip()"></div>
+			<div class="flipper" id="card">
+				<div class="front" id="front" onclick="flipCard()">
+					<p>Front of the card 1</p>
+				</div>
+				<div class="back" id="back" onclick="storeCard()">
+					<p>Back of the card 1</p>
+				</div>
+			</div>
+
+			
+		</div>
+
+  </body>
+</html>
+
+<script type="text/javascript">
+
+let card = document.getElementById('card');
+let front = document.getElementById('front');
+let back = document.getElementById('back');
+
+
+function flipCard() {
+	card.classList.add('flipped');
+}
+
+function storeCard() {
+	card.classList.add('stowed');
+			
+	setTimeout(function() {
+		card.classList.remove('flipped');
+		card.classList.remove('stowed');
+		card.classList.add('low');
+	}, 1600);
+
+	setTimeout(function() {
+		card.classList.remove('low');
+	}, 1650);
+}
+
+function storeAndFlip() {
+	storeCard();
+	setTimeout(function() {
+		flipCard();
+	}, 1700);
+}
+
+
+</script>
