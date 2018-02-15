@@ -46,7 +46,7 @@ function loadDeck() {
 
 loadDeck();
 
-console.log(JSONString);
+var deck = JSON.parse(JSONString);
 
 function flipCard() {
 	card.classList.add('flipped');
