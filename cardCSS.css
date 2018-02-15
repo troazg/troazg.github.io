@@ -48,7 +48,7 @@
 
 .front {
 	transform: rotateY(180deg);
-	background-color: yellow;
+	background-color: white;
 }
 
 .blankCard {
@@ -61,13 +61,13 @@
 }
 
 #cardValue {
-	width: 100px;
+	width: 120px;
 	height: 150px;
 	position: absolute;
-	left: 180px;
-	top: 145px;
+	left: 160px;
+	top: 170px;
 	background-color: white;
-	font-size: 8vw;
+	font-size: 6vw;
 	text-align: center;
 	vertical-align: center;
 	padding: 0;
@@ -78,6 +78,7 @@
 	height: 150px;
 	position: absolute;
 	left: 40px;
-	top: 170px;
-	background-color: black;
+	top: 180px;
+	background-size: contain;
+	background-repeat: no-repeat;
 }

@@ -5,19 +5,16 @@
     <title>Card Draw</title>
     <link rel="stylesheet" type="text/css" href="cardCSS.css">
   </head>
-  <body>
+  <body onload="loadDeck()">
 		<h2>Card Draw</h2>
 
 		<div class="flip-container" id="deck">
 			<div class="blankCard" id="blankCard" onclick="storeAndFlip()"></div>
 			<div class="flipper" id="card">
-				<div class="back" id="back" onclick="flipCard()">
-					<p>Back of the card</p>
-				</div>
+				<div class="back" id="back" onclick="drawCard()"></div>
 				<div class="front" id="front" onclick="storeCard()">
-					<p>Front of the card</p>
 					<div id="suitIcon"></div>
-					<div id="cardValue">Q</div>
+					<div id="cardValue">10</div>
 				</div>
 			</div>
 
@@ -33,22 +30,18 @@ let card = document.getElementById('card');
 let front = document.getElementById('front');
 let back = document.getElementById('back');
 
-let JSONString = "";
+let JSONdata;
 
 function loadDeck() {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-			JSONString = this.responseText;
+			JSONdata = JSON.parse(this.responseText);
 		}
 	};
 	xhttp.open("GET", "cards.json", true);
 	xhttp.send();
 }
-
-loadDeck();
-
-var JSONdata = JSON.parse(JSONString);
 
 var deck = new Array;
 
@@ -58,10 +51,13 @@ for (i = 0; i < JSONdata['deck'].length; i++) {
 }
 
 function drawCard() {
-	let cardId = Math.floor((Math.random() * 52) + 1);
-	let cardValue = '';
+	var cardId = Math.floor(Math.random() * 52);
+	var card = deck[cardId];
+	var cardValue = '';
+	var valueElement = document.getElementById('cardValue');
+	var suitElement = document.getElementById('suitIcon');
 
-	switch(deck[cardId].value) {
+	switch(card.value) {
 		case 1:
 			cardValue = 'A';
 			break;
@@ -75,8 +71,14 @@ function drawCard() {
 			cardValue = 'K';
 			break;
 		default:
-			cardValue = deck[cardId].value;
+			cardValue = card.value;
 	}
+
+	valueElement.innerHTML = cardValue;
+	valueElement.style.color = card.color;
+	suitElement.style.backgroundImage = "url('" + card.suit + ".png')";
+
+	flipCard();
 }
 
 function flipCard() {
@@ -100,7 +102,7 @@ function storeCard() {
 function storeAndFlip() {
 	storeCard();
 	setTimeout(function() {
-		flipCard();
+		drawCard();
 	}, 1700);
 }
 
