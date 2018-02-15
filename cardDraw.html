@@ -31,6 +31,22 @@ let card = document.getElementById('card');
 let front = document.getElementById('front');
 let back = document.getElementById('back');
 
+let JSONString = "";
+
+function loadDeck() {
+	var xhttp = new XMLHttpRequest();
+	xhttp.onreadystatechange = function() {
+		if (this.readyState == 4 && this.status == 200) {
+			JSONString = this.responseText;
+		}
+	};
+	xhttp.open("GET", "cards.json", true);
+	xhttp.send();
+}
+
+loadDeck();
+
+console.log(JSONString);
 
 function flipCard() {
 	card.classList.add('flipped');
