@@ -4,313 +4,313 @@
 			"cardId": 1,
 			"value": 1,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 2,
 			"value": 2,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 3,
 			"value": 3,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 4,
 			"value": 4,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 5,
 			"value": 5,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 6,
 			"value": 6,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 7,
 			"value": 7,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 8,
 			"value": 8,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 9,
 			"value": 9,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 10,
 			"value": 10,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 11,
 			"value": 11,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 12,
 			"value": 12,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 13,
 			"value": 13,
 			"suit": "hearts", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 14,
 			"value": 1,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 15,
 			"value": 2,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 16,
 			"value": 3,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 17,
 			"value": 4,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 18,
 			"value": 5,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 19,
 			"value": 6,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 20,
 			"value": 7,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 21,
 			"value": 8,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 22,
 			"value": 9,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 23,
 			"value": 10,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 24,
 			"value": 11,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 25,
 			"value": 12,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 26,
 			"value": 13,
 			"suit": "diamonds", 
-			"color": "red",
+			"color": "red"
 		},
 		{
 			"cardId": 27,
 			"value": 1,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 28,
 			"value": 2,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 29,
 			"value": 3,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 30,
 			"value": 4,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 31,
 			"value": 5,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 32,
 			"value": 6,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 33,
 			"value": 7,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 34,
 			"value": 8,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 35,
 			"value": 9,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 36,
 			"value": 10,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 37,
 			"value": 11,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 38,
 			"value": 12,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 39,
 			"value": 13,
 			"suit": "spades", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 40,
 			"value": 1,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 41,
 			"value": 2,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 42,
 			"value": 3,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 43,
 			"value": 4,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 44,
 			"value": 5,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 45,
 			"value": 6,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 46,
 			"value": 7,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 47,
 			"value": 8,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 48,
 			"value": 9,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 49,
 			"value": 10,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 50,
 			"value": 11,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 51,
 			"value": 12,
 			"suit": "clubs", 
-			"color": "black",
+			"color": "black"
 		},
 		{
 			"cardId": 52,
 			"value": 13,
 			"suit": "clubs", 
-			"color": "black",
-		},
+			"color": "black"
+		}
 	]
 }
