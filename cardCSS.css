@@ -34,7 +34,7 @@
 	border-style: solid;
 }
 
-.front {
+.back {
 	z-index: 2;
 	background-color: blue;
 }
@@ -46,7 +46,7 @@
 }
 
 
-.back {
+.front {
 	transform: rotateY(180deg);
 	background-color: yellow;
 }
@@ -58,4 +58,26 @@
 .low {
 	z-index: -2;
 	display: none;
+}
+
+#cardValue {
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	left: 180px;
+	top: 145px;
+	background-color: white;
+	font-size: 8vw;
+	text-align: center;
+	vertical-align: center;
+	padding: 0;
+}
+
+#suitIcon {
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	left: 40px;
+	top: 170px;
+	background-color: black;
 }
