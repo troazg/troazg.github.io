@@ -5,7 +5,7 @@
     <title>Card Draw</title>
     <link rel="stylesheet" type="text/css" href="cardCSS.css">
   </head>
-  <body onload="loadDeck()">
+  <body> <!-- onload="loadDeck()"> -->
 		<h2>Card Draw</h2>
 
 		<div class="flip-container" id="deck">
@@ -48,8 +48,6 @@ function loadDeck() {
 	xhttp.open("GET", "cards.json", true);
 	xhttp.send();
 }
-
-
 
 
 

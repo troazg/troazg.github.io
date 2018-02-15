@@ -10,13 +10,13 @@
 }
 
 .flipper.stowed {
-	margin-left: -378px;
+	margin-left: -355px;
 	z-index: -1;
 }
 
 .flip-container, .front, .back, .blankCard {
-	width: 320px;
-	height: 480px;
+	width: 343px;
+	height: 490px;
 }
 
 .flipper {
@@ -34,13 +34,17 @@
 	border-style: solid;
 }
 
+.back, .blankCard {
+	background-image: url('cardback.png');
+	background-size: contain;
+	background-repeat: no-repeat;
+}
+
 .back {
 	z-index: 2;
-	background-color: blue;
 }
 
 #deck {
-	background-color: red;
 	border-style: solid;
 	border: 1px;
 }
@@ -49,10 +53,6 @@
 .front {
 	transform: rotateY(180deg);
 	background-color: white;
-}
-
-.blankCard {
-	background-color: green;
 }
 
 .low {
@@ -66,7 +66,6 @@
 	position: absolute;
 	left: 160px;
 	top: 170px;
-	background-color: white;
 	font-size: 6vw;
 	text-align: center;
 	vertical-align: center;
