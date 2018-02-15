@@ -31,24 +31,27 @@ let front = document.getElementById('front');
 let back = document.getElementById('back');
 
 let JSONdata;
+let deck = new Array;
 
 function loadDeck() {
 	var xhttp = new XMLHttpRequest();
 	xhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
 			JSONdata = JSON.parse(this.responseText);
+
+			//Turn 2 dimentional array into 1 dimentional array
+			for (i = 0; i < JSONdata['deck'].length; i++) {
+				deck[i] = JSONdata['deck'][i];
+			}
 		}
 	};
 	xhttp.open("GET", "cards.json", true);
 	xhttp.send();
 }
 
-var deck = new Array;
 
-//Turn 2 dimentional array into 1 dimentional array
-for (i = 0; i < JSONdata['deck'].length; i++) {
-	deck[i] = JSONdata['deck'][i];
-}
+
+
 
 function drawCard() {
 	var cardId = Math.floor(Math.random() * 52);
