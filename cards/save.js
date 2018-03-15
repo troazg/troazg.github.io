@@ -40,7 +40,7 @@ function remove() {
 
 	let index = findWithAttr(a, "id", id)
 
-	console.log(index);
+	a.splice(index, 1);
 }
 
 function findWithAttr(array, attr, value) {
