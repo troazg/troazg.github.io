@@ -81,3 +81,26 @@
 	background-size: contain;
 	background-repeat: no-repeat;
 }
+
+.hidden {
+	display: none;
+}
+
+table {
+	border-collapse: collapse;
+	width: 400px;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+th, td {
+	text-align: center;
+	padding: 10px;
+}
+
+td > button {
+	display: block;
+	margin: auto;
+}

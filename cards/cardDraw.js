@@ -7,11 +7,17 @@ let deck = new Array;
 
 function setup() {
 
+	if (window.localStorage.savedDraws == undefined) {
+		window.localStorage.savedDraws = "";
+	}
+
 	if (window.localStorage.owner == undefined) {
 		addPrompt();
 	} else {
 		displayOwner();
 	}
+
+	loadSavedDraws();
 
 	loadDeck();
 }
@@ -35,9 +41,16 @@ function loadDeck() {
 
 
 function drawCard() {
-	var cardId = Math.floor(Math.random() * 52);
-	var card = deck[cardId];
-	var cardValue = '';
+	// var cardId = Math.floor(Math.random() * 52);
+	// var card = deck[cardId];
+	// var cardValue = '';
+
+	var card = {
+		value: 12,
+		color: "black",
+		suit: "clubs"
+	}
+
 	var valueElement = document.getElementById('cardValue');
 	var suitElement = document.getElementById('suitIcon');
 
@@ -63,6 +76,9 @@ function drawCard() {
 	suitElement.style.backgroundImage = "url('" + card.suit + ".png')";
 
 	flipCard();
+
+	window.sessionStorage.value = cardValue;
+	window.sessionStorage.suit = card.suit;
 }
 
 function flipCard() {
