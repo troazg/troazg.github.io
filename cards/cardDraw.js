@@ -41,15 +41,15 @@ function loadDeck() {
 
 
 function drawCard() {
-	// var cardId = Math.floor(Math.random() * 52);
-	// var card = deck[cardId];
-	// var cardValue = '';
+	var cardId = Math.floor(Math.random() * 52);
+	var card = deck[cardId];
+	var cardValue = '';
 
-	var card = {
-		value: 12,
-		color: "black",
-		suit: "clubs"
-	}
+	// var card = {
+	// 	value: 12,
+	// 	color: "black",
+	// 	suit: "clubs"
+	// }
 
 	var valueElement = document.getElementById('cardValue');
 	var suitElement = document.getElementById('suitIcon');
