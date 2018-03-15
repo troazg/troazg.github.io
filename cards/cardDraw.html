@@ -5,8 +5,9 @@
     <title>Card Draw</title>
     <link rel="stylesheet" type="text/css" href="cardCSS.css">
   </head>
-  <body onload="loadDeck()">
+  <body onload="setup()">
 		<h2>Card Draw</h2>
+		<div id="owner"></div>
 
 		<div class="flip-container" id="deck">
 			<div class="blankCard" id="blankCard" onclick="storeAndFlip()"></div>
