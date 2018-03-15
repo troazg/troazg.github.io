@@ -41,6 +41,8 @@ function remove() {
 	let index = findWithAttr(a, "id", id)
 
 	a.splice(index, 1);
+
+	window.localStorage.savedDraws = JSON.stringify(a);
 }
 
 function findWithAttr(array, attr, value) {
