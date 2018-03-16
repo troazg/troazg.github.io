@@ -17,6 +17,8 @@ function setup() {
 		displayOwner();
 	}
 
+	getTimesFlipped();
+
 	loadSavedDraws();
 
 	loadDeck();
@@ -45,6 +47,7 @@ function drawCard() {
 	var card = deck[cardId];
 	var cardValue = '';
 
+	// Dummy card for local testing (AJAX won't work locally without setting up a server)
 	// var card = {
 	// 	value: 12,
 	// 	color: "black",
@@ -79,6 +82,10 @@ function drawCard() {
 
 	window.sessionStorage.value = cardValue;
 	window.sessionStorage.suit = card.suit;
+	window.sessionStorage.flipped = Number(window.sessionStorage.flipped) + 1;
+	window.localStorage.flipped = Number(window.localStorage.flipped) + 1;
+
+	getTimesFlipped();
 }
 
 function flipCard() {
@@ -104,4 +111,17 @@ function storeAndFlip() {
 	setTimeout(function() {
 		drawCard();
 	}, 1700);
+}
+
+function getTimesFlipped() {
+	if (window.sessionStorage.flipped == undefined) {
+		window.sessionStorage.flipped = 0;
+	}
+
+	if (window.localStorage.flipped == undefined) {
+		window.localStorage.flipped = 0;
+	}
+
+	document.getElementById("sessionCount").innerHTML = window.sessionStorage.flipped;
+	document.getElementById("localCount").innerHTML = window.localStorage.flipped;
 }
