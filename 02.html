@@ -1,1 +1,40 @@
-Topic 02
+<h3>Topic 02</h3>
+
+<p>Please open the console to see what is happening on this page. </p>
+
+<script>
+	function Person(first, last, age, food) {
+		this.firstName = first;
+		this.lastName = last;
+		this.age = age;
+		this.favFood = food;
+
+		this.greet = function() {
+			console.log("Hello, " + this.firstName + " " + this.lastName + "!");
+		}
+
+		this.suggestMeal = function() {
+			console.log("Can I interest you in some " + this.favFood + "?");
+		}
+	}
+
+	console.log("Creating a new person, Mark");
+
+	var mark = new Person("Mark", "Thompson", 29, "pizza");
+
+	console.log("Mark has been created");
+	console.log(mark);
+
+	console.log("Calling mark.greet()");
+	mark.greet();
+
+	console.log("Calling mark.suggestMeal()");
+	mark.suggestMeal();
+
+	console.log("Mark had a change of heart. His new favorite food is macaroni");
+
+	mark.favFood = "macaroni";
+
+	console.log("Suggesting a meal for Mark again");
+	mark.suggestMeal();
+</script>
