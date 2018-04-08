@@ -1,0 +1,24 @@
+{
+	"deck": [
+		{
+			"cardId": 1,
+			"bird": "crow",
+			"image": "crow.jpg"
+		},
+		{
+			"cardId": 2,
+			"bird": "crane",
+			"image": "crane.jpg"
+		},
+		{
+			"cardId": 3,
+			"bird": "duck",
+			"image": "duck.jpg"
+		},
+		{
+			"cardId": 4,
+			"bird": "swan",
+			"image": "swan.jpg"
+		},
+	]
+}

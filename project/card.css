@@ -1,0 +1,190 @@
+
+.flip-container {
+	perspective: 1000px;
+	margin: 50px;
+}
+
+.flipper.flipped {
+	transform: rotateY(180deg);
+	transform-origin: 350px center;
+}
+
+.flipper.stowed {
+	margin-left: -397px;
+	z-index: -1;
+}
+
+.flip-container, .front, .back, .blankCard {
+	width: 300px;
+	height: 450px;
+}
+
+.flipper {
+	transition: 1.5s;
+	transform-style: preserve-3d;
+	position: relative;
+}
+
+.front, .back, .blankCard {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	border: 1px;
+	border-style: solid;
+}
+
+.back, .blankCard {
+	background-color: #d3d3e2;
+	background-image: url("res/back.png");
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.back {
+	z-index: 2;
+}
+
+#deck {
+	border-style: solid;
+	border: 1px;
+}
+
+
+.front {
+	transform: rotateY(180deg);
+	background-color: white;
+}
+
+.low {
+	z-index: -2;
+	display: none;
+}
+
+#birdImage {
+	width: 100%;
+	height: 80%;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-image: url('swan.jpg');
+
+}
+
+#birdName {
+	width: 100%;
+	height: 20%;
+	text-align: center;
+	font-size: 3em;
+}
+
+.hidden {
+	display: none;
+}
+
+#guessButtons {
+	height: 75px;
+}
+
+.btn {
+	color:#444;
+  border:1px solid #CCC;
+  background:#DDD;
+  box-shadow: 0 0 5px -1px rgba(0,0,0,0.2);
+  cursor:pointer;
+  vertical-align:middle;
+  width: 100px;
+  height: 30px;
+  padding: 20px;
+  margin: 20px;
+  text-align: center;
+  
+}
+
+.btn:hover {
+	box-shadow: 0 0 5px -1px rgba(0,0,0,0.6);
+}
+
+.guess {
+	float: left;
+	font-size: 1.5em;
+}
+
+@keyframes pulse_animation {
+  0% { transform: scale(1); }
+  25% { transform: scale(1.2); }
+  50% { transform: scale(1); }
+  75% { transform: scale(0.8); }
+  100% { transform: scale(1); }
+}
+
+.pulse {
+	animation-name: pulse_animation;
+	animation-duration: 3000ms;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+#results {
+	height: 150px;
+	width: 800px;
+	text-align: center;
+
+}
+
+#message {
+	vertical-align: middle;
+	margin: 0;
+	height: 50%;
+	text-align: center;
+	font-size: 2em;
+	padding-top: 10px; 
+}
+
+#reset {
+	font-size: 1.3em;
+	margin: 0;
+	text-align: center;
+	margin: 0 auto;
+	width: 100px;
+	display: block;
+	
+}
+
+#error {
+	color: red;
+}
+
+@keyframes hint_animation {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.4); }
+  100% { transform: scale(1); }
+}
+
+.hint {
+	animation-name: hint_animation;
+	animation-duration: 1000ms;
+	animation-iteration-count: 1;
+	animation-timing-function: linear;
+}
+
+
+table {
+	border-collapse: collapse;
+	width: 400px;
+}
+
+table, th, td {
+	border: 1px solid black;
+}
+
+th, td {
+	text-align: center;
+	padding: 10px;
+}
+
+td > button {
+	display: block;
+	margin: auto;
+}

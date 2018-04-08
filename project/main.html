@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Guessing Game</title>
+    <link rel="stylesheet" type="text/css" href="card.css">
+  </head>
+  <body onload="setup()">
+		<h2>Guessing Game</h2>
+		<div>Guess which bird will be on the card, then flip a card to see if you were right!</div>
+		<div id="error" class="hidden"><p>Please guess a bird before flipping a card.</p> </div>
+
+		<div id="guessButtons">
+			<div class="btn guess" id="crane" onclick="guess(this)">Crane</div>
+			<div class="btn guess" id="swan" onclick="guess(this)">Swan</div>
+			<div class="btn guess" id="duck" onclick="guess(this)">Duck</div>
+			<div class="btn guess" id="crow" onclick="guess(this)">Crow</div>
+		</div>
+
+		<div class="flip-container" id="deck">
+			<div class="blankCard" id="blankCard" onclick="resetHint();"></div>
+			<div class="flipper" id="card">
+				<div class="back" id="back" onclick="drawCard()"></div>
+				<div class="front" id="front" onclick="resetHint();">
+					<div id="birdImage"></div>
+					<div id="birdName"></div>
+				</div>
+			</div>			
+		</div>
+
+		<div id="results" class="hidden">
+			<p id="message"></>
+			<div class="btn" id="reset" onclick="resetGame()">Play Again</div>
+		</div>
+
+		<div>
+			<p>You have guessed correctly <span id="sessionCount"></span> time(s) this session.</p>
+			<p>You have guessed correctly <span id="localCount"></span> time(s) in this browser since clearing your local storage.</p>
+		</div>
+
+
+		<div id="history">
+			<h2>History <input type="button" name="Clear" value="Clear" onclick="clearHistory()"></h2>
+			<table id="savedTable">
+				<tr>
+					<th>Guess</th>
+					<th>Card</th>
+				</tr>
+			</table>
+		</div>
+
+		<script type="text/javascript" src="draw.js"></script>
+		<script type="text/javascript" src="name.js"></script>
+		<script type="text/javascript" src="save.js"></script>
+		<script type="text/javascript" src="guess.js"></script>
+  </body>
+</html>
+
+
