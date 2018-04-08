@@ -7,6 +7,12 @@
 .flipper.flipped {
 	transform: rotateY(180deg);
 	transform-origin: 350px center;
+	-webkit-transform: rotateY(180deg);
+	-webkit-transform-origin: 350px center;
+	-moz-transform: rotateY(180deg);
+	-moz-transform-origin: 350px center;
+	-ms-transform: rotateY(180deg);
+	-ms-transform-origin: 350px center;
 }
 
 .flipper.stowed {
@@ -22,11 +28,20 @@
 .flipper {
 	transition: 1.5s;
 	transform-style: preserve-3d;
+	-webkit-transition: 1.5s;
+	-webkit-transform-style: preserve-3d;
+	-moz-transition: 1.5s;
+	-moz-transform-style: preserve-3d;
+	-ms-transition: 1.5s;
+	-ms-transform-style: preserve-3d;
 	position: relative;
 }
 
 .front, .back, .blankCard {
 	backface-visibility: hidden;
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
 	position: absolute;
 	top: 0;
 	left: 0;
@@ -54,6 +69,9 @@
 
 .front {
 	transform: rotateY(180deg);
+	-webkit-transform: rotateY(180deg);
+	-moz-transform: rotateY(180deg);
+	-ms-transform: rotateY(180deg);
 	background-color: white;
 }
 
